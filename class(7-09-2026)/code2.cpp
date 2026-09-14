@@ -10,11 +10,11 @@ public:
         basicSalary = salary;
     }
 
-    // Friend function
+    
     friend float calculateGrossSalary(Employee emp);
 };
 
-// Friend function definition
+
 float calculateGrossSalary(Employee emp) {
     float hra = 0.20 * emp.basicSalary;
     float da = 0.10 * emp.basicSalary;

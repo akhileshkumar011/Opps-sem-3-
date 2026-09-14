@@ -12,7 +12,7 @@ public:
         academicMarks = marks;
     }
 
-    // Friend function
+    
     friend int calculateTotal(Student s, Sports sp);
 };
 
@@ -25,11 +25,9 @@ public:
         sportsMarks = marks;
     }
 
-    // Friend function
     friend int calculateTotal(Student s, Sports sp);
 };
 
-// Friend function definition
 int calculateTotal(Student s, Sports sp) {
     return s.academicMarks + sp.sportsMarks;
 }
